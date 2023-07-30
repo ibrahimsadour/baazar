@@ -35,7 +35,8 @@ return [
 	'no_user_types_found' => 'No user types found',
 	'no_report_types_found' => 'No report types found',
 	'no_companies_found' => 'No companies found',
-
+    'discover' => 'Discover',
+    'our sections'=>'our sections',
 	'category_not_found' => 'Category not found',
 	'city_not_found' => 'City not found',
 	'country_not_found' => 'Country not found',

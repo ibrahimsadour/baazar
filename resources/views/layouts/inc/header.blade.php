@@ -25,27 +25,82 @@ if ($multiCountriesIsEnabled) {
 		<div class="container">
 			
 			<div class="navbar-identity p-sm-0">
-				{{-- Logo --}}
-				<a href="{{ url('/') }}" class="navbar-brand logo logo-title">
-					<img src="{{ config('settings.app.logo_url') }}"
-						 alt="{{ strtolower(config('settings.app.name')) }}" class="main-logo" data-bs-placement="bottom"
-						 data-bs-toggle="tooltip"
-						 title="{!! $logoLabel !!}"/>
-				</a>
+
 				{{-- Toggle Nav (Mobile) --}}
-				<button class="navbar-toggler -toggler float-end"
+				<button style="float: right!important;height: 35px;padding: 0px 5px;border-color: #fff;" class="navbar-toggler -toggler float-end"
 						type="button"
 						data-bs-toggle="collapse"
 						data-bs-target="#navbarsDefault"
 						aria-controls="navbarsDefault"
 						aria-expanded="false"
 						aria-label="Toggle navigation"
-				>
+						>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
 						<title>{{ t('Menu') }}</title>
 						<path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path>
 					</svg>
 				</button>
+				
+				{{-- Logo --}}
+				<a href="{{ url('/') }}" class="navbar-brand logo logo-title" style="margin-top: -8px;margin-right: 10px;">
+					<img src="{{ config('settings.app.logo_url') }}"
+						 alt="{{ strtolower(config('settings.app.name')) }}" class="main-logo" data-bs-placement="bottom"
+						 data-bs-toggle="tooltip"
+						 title="{!! $logoLabel !!}"/>
+				</a>
+
+				{{-- add ads --}}
+				@if (!auth()->check() && config('settings.single.guests_can_post_listings') != '1')
+					<a class="navbar-toggler float-end btn btn-lg btn-listing" style="line-height: 30px; height: 30px;" href="#quickLogin" data-bs-toggle="modal">
+						<svg width="18" height="18" viewBox="0 0 24 24" class="inline vMiddle" xmlns="http://www.w3.org/2000/svg" data-name="IconAddPost">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.14179 2.65377C8.5208 2.23736 9.05779 2 9.62087 2H14.4844C15.0475 2 15.5845 2.23735 15.9635 2.65377L17.3911 4.22222H20.8947C22.1105 4.22222 23.1053 5.22222 23.1053 6.44444V19.7778C23.1053 21 22.1105 22 20.8947 22H3.21053C1.99474 22 1 21 1 19.7778V6.44444C1 5.22222 1.99474 4.22222 3.21053 4.22222H6.71421L8.14179 2.65377ZM6.52632 13.1112C6.52632 16.1778 9.00211 18.6667 12.0526 18.6667C15.1032 18.6667 17.5789 16.1778 17.5789 13.1112C17.5789 10.0445 15.1032 7.55561 12.0526 7.55561C9.00211 7.55561 6.52632 10.0445 6.52632 13.1112Z" fill="#fff">
+							</path>
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3684 13.5874H12.5263V16.4445H11.5789V13.5874H8.73682V12.635H11.5789V9.77783H12.5263V12.635H15.3684V13.5874Z" fill="#fff" stroke="#fff" stroke-width="0.1"></path>
+						</svg> <span style="color: #fff">{{ t('Create Listing') }}</span> 
+					</a>
+				@else
+				<li class="nav-item dropdown no-arrow open-on-hover navbar-toggler float-end btn">
+					<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+						<i class="fas fa-user-circle"></i>
+						<span>{{ auth()->user()->name }}</span>
+						<span class="badge badge-pill badge-important count-threads-with-new-messages d-lg-inline-block d-md-none">0</span>
+						<i class="bi bi-chevron-down"></i>
+					</a>
+					<ul id="userMenuDropdown" class="dropdown-menu user-menu shadow-sm">
+						@if (isset($userMenu) && !empty($userMenu))
+							@php
+								$menuGroup = '';
+								$dividerNeeded = false;
+							@endphp
+							@foreach($userMenu as $key => $value)
+								@continue(!$value['inDropdown'])
+								@php
+									if ($menuGroup != $value['group']) {
+										$menuGroup = $value['group'];
+										if (!empty($menuGroup) && !$loop->first) {
+											$dividerNeeded = true;
+										}
+									} else {
+										$dividerNeeded = false;
+									}
+								@endphp
+								@if ($dividerNeeded)
+									<li class="dropdown-divider"></li>
+								@endif
+								<li class="dropdown-item{{ (isset($value['isActive']) && $value['isActive']) ? ' active' : '' }}">
+									<a href="{{ $value['url'] }}">
+										<i class="{{ $value['icon'] }}"></i> {{ $value['name'] }}
+										@if (isset($value['countVar'], $value['countCustomClass']) && !empty($value['countVar']) && !empty($value['countCustomClass']))
+											<span class="badge badge-pill badge-important{{ $value['countCustomClass'] }}">0</span>
+										@endif
+									</a>
+								</li>
+							@endforeach
+						@endif
+					</ul>
+				</li>
+				@endif
+
 				{{-- Country Flag (Mobile) --}}
 				@if ($multiCountriesIsEnabled)
 					@if (!empty(config('country.icode')))
@@ -212,7 +267,7 @@ if ($multiCountriesIsEnabled) {
 					}
 					?>
 					<li class="nav-item postadd">
-						<a class="btn btn-block btn-border btn-listing" href="{{ $addListingUrl }}"{!! $addListingAttr !!}>
+						<a class="btn btn-block btn-border btn-listing" style="line-height: 0px;" href="{{ $addListingUrl }}"{!! $addListingAttr !!}>
 							<i class="far fa-edit"></i> {{ t('Create Listing') }}
 						</a>
 					</li>
