@@ -42,7 +42,7 @@ if ($multiCountriesIsEnabled) {
 				</button>
 				
 				{{-- Logo --}}
-				<a href="{{ url('/') }}" class="navbar-brand logo logo-title" style="margin-top: -8px;margin-right: 10px;">
+				<a href="{{ url('/') }}" class="navbar-brand logo logo-title" style="margin-top: -12px;margin-right: 10px;">
 					<img src="{{ config('settings.app.logo_url') }}"
 						 alt="{{ strtolower(config('settings.app.name')) }}" class="main-logo" data-bs-placement="bottom"
 						 data-bs-toggle="tooltip"
@@ -59,7 +59,7 @@ if ($multiCountriesIsEnabled) {
 						</svg> <span style="color: #fff">{{ t('Create Listing') }}</span> 
 					</a>
 				@else
-				<li class="nav-item dropdown no-arrow open-on-hover navbar-toggler float-end btn">
+				<li class="nav-item dropdown no-arrow open-on-hover float-end btn" style="padding: 0px 0px;">
 					<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
 						<i class="fas fa-user-circle"></i>
 						<span>{{ auth()->user()->name }}</span>
