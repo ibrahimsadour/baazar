@@ -18,7 +18,7 @@ $maxSubCats = (int)data_get($sectionOptions, 'max_sub_cats');
 			<div class="col-xl-12 box-title no-border">
 				<div class="inner">
 					<h2>
-						<span class="title-3">{{ t('discover') }} <span style="font-weight: bold; color:#426998">{{ t('our sections') }}</span></span>
+						<span style="font-weight: bold;" class="title-3">{{ t('discover') }} <span style="font-weight: bold; color:#426998">{{ t('our sections') }}</span></span>
 						<a href="{{ \App\Helpers\UrlGen::sitemap() }}" class="sell-your-item">
 							{{ t('View more') }} <i class="fas fa-bars"></i>
 						</a>

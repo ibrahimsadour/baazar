@@ -25933,7 +25933,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
 }
 @media (max-width:575px){
     div.f-category{
-        width:50%
+        width:25%
     }
     .f-category img{
         height:60px
