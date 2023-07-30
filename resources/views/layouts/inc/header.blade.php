@@ -59,10 +59,10 @@ if ($multiCountriesIsEnabled) {
 						</svg> <span style="color: #fff">{{ t('Create Listing') }}</span> 
 					</a>
 				@else
-				<li class="nav-item dropdown no-arrow open-on-hover float-end btn" style="padding: 0px 0px;">
-					<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+				<li class="nav-item dropdown no-arrow open-on-hover float-end" style="padding: 0px 0px;margin-top: 18px;">
+					<a href="#" class="dropdown-toggle nav-link" style="padding: 0.5rem 0rem;" data-bs-toggle="dropdown">
 						<i class="fas fa-user-circle"></i>
-						<span>{{ auth()->user()->name }}</span>
+						<span>{{  Str::limit(auth()->user()->name, 15) }}</span>
 						<span class="badge badge-pill badge-important count-threads-with-new-messages d-lg-inline-block d-md-none">0</span>
 						<i class="bi bi-chevron-down"></i>
 					</a>
