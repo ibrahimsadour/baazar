@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|Roboto+Condensed:400,300,700,700italic|Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Cairo:400,100,300,500,700,900|Cairo+Condensed:400,300,700,700italic|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Cairo+Condensed:400,300,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Cairo:300,400,600,700|Changa:300,400,500,600,700&subset=arabic,latin-ext);
 .animated{
     -webkit-animation-duration:1s;
@@ -14005,7 +14005,7 @@
     --bs-danger:#dc3545;
     --bs-light:#f8f9fa;
     --bs-dark:#212529;
-    --bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Cairo,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     --bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0))
 }
@@ -23627,7 +23627,7 @@ html{
     -webkit-tap-highlight-color:transparent
 }
 body{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:.85rem;
     font-weight:400;
     line-height:1.5;
@@ -24243,7 +24243,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     width:100%
 }
 .btn-post{
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-weight:400;
     text-transform:uppercase
 }
@@ -24328,7 +24328,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
     border:1px solid #ddd
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-weight:400;
     margin:0;
     padding-bottom:15px;
@@ -24434,7 +24434,7 @@ h6{
     font-weight:500
 }
 .title-5{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     border-bottom:1px solid #e6e6e6;
     color:#080808;
     font-size:16px;
@@ -24446,7 +24446,7 @@ h6{
 }
 .title-6{
     font-size:4rem;
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:300;
     line-height:1;
     padding-bottom:0
@@ -24601,7 +24601,7 @@ label{
 }
 .intro h1,.intro-title{
     color:#fff;
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:2.5rem;
     line-height:normal;
     font-weight:700;
@@ -24865,7 +24865,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
         line-height:normal;
         padding:12px;
         font-size:12px;
-        font-family:"Roboto Condensed",Helvetica,Arial,sans-serif
+        font-family:"Cairo Condensed",Helvetica,Arial,sans-serif
     }
     .navbar.navbar-light .navbar-nav>li.lang-menu .caret,.navbar.navbar-site .navbar-nav>li.lang-menu .caret{
         margin-right:3px
@@ -24939,7 +24939,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
         text-transform:uppercase;
         font-weight:500;
         letter-spacing:.5px;
-        font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+        font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
         font-size:13px;
         padding:15px 15px!important
     }
@@ -25059,7 +25059,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
 }
 .navbar-nav .flag-menu a{
     padding:8px 10px;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif
 }
 .modalHasList .flag-icon{
     margin-bottom:4px;
@@ -25129,7 +25129,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
 }
 .footer-title{
     color:#000;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:15px;
     font-weight:700;
     margin-bottom:10px;
@@ -25577,7 +25577,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
 .item-carousel .item-name{
     clear:both;
     display:block;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:14px;
     font-weight:400;
     line-height:16px;
@@ -25682,7 +25682,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
 }
 .iconbox-wrap-text{
     color:#aaa;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:16px;
     text-transform:uppercase
 }
@@ -25717,7 +25717,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
     margin-left:auto
 }
 .page-bottom-info-content h1{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:500;
     letter-spacing:1px;
     margin-bottom:15px;
@@ -25809,7 +25809,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
     transform:scale(1.1) translateY(2px)
 }
 .f-category h6{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:13px;
     font-weight:500;
     letter-spacing:0;
@@ -25885,7 +25885,7 @@ html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.b
 .featured-list-slider .item .item-name{
     display:block;
     line-height:normal;
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:13px;
     font-weight:500;
     letter-spacing:0;
@@ -26251,7 +26251,7 @@ nav.slider-nav a.next{
 }
 .tab-lite .nav-tabs>li>a{
     border-radius:0!important;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:16px;
     font-weight:400;
     line-height:normal;
@@ -26451,10 +26451,10 @@ nav.slider-nav a.next{
     -moz-transition:all .25s ease;
     -o-transition:all .25s ease;
     transition:all .25s ease;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif
 }
 .category-list:not(.make-compact):not(.make-grid) .item-list .item-price{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:700;
     font-size:1.3rem
 }
@@ -26665,7 +26665,7 @@ nav.slider-nav a.next{
 .cornerRibbons a{
     color:#fff;
     display:block;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:12px;
     font-weight:400;
     text-align:center;
@@ -27087,7 +27087,7 @@ hr.thin{
 }
 .prop-info span.text{
     font-size:12px;
-    font-family:Roboto Condensed,Helvetica,Arial,sans-serif
+    font-family:Cairo Condensed,Helvetica,Arial,sans-serif
 }
 .prop-info-block{
     border-left:1px solid #ccc;
@@ -27367,7 +27367,7 @@ hr.thin{
     padding:5px
 }
 .items-details-wrapper>h2{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:700
 }
 .items-details-wrapper .info-row{
@@ -27565,7 +27565,7 @@ h1.trtri span{
     }
 }
 .card-header{
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:1rem;
     text-transform:uppercase
 }
@@ -27670,7 +27670,7 @@ h1.trtri span{
     list-style:decimal
 }
 .posts-action{
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif
 }
 .label.adlistingtype{
     font-size:12px;
@@ -27717,7 +27717,7 @@ h1.trtri span{
     position:relative;
     display:block;
     padding-left:130px;
-    font-family:Roboto,sans-serif;
+    font-family:Cairo,sans-serif;
     font-weight:700
 }
 @media (max-width:767px){
@@ -28067,7 +28067,7 @@ div.login-box .panel-footer label{
 .user-panel-sidebar ul li a{
     background:#fff;
     display:block;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     color:#2a3744;
     font-size:12px;
     height:auto;
@@ -28235,7 +28235,7 @@ td.items-details-td{
     display:inline-block
 }
 .title-1{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:300;
     text-transform:uppercase;
     display:block;
@@ -28728,7 +28728,7 @@ td.items-details-td{
     border:solid 1px var(--border-color);
     height:44px;
     line-height:44px;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     background-color:#fafafa;
     border-top:none
 }
@@ -29076,7 +29076,7 @@ td.items-details-td{
 .card-event .event-badges .badge{
     font-weight:lighter;
     letter-spacing:.3px;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     padding:3px 6px;
     border-radius:2px
 }
@@ -29093,7 +29093,7 @@ td.items-details-td{
     background:#f3f3f3;
     line-height:1;
     color:#000;
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     padding:6px 14px;
     text-transform:uppercase;
     letter-spacing:1px;
@@ -29410,7 +29410,7 @@ td.items-details-td{
     margin:0 auto;
     text-align:center;
     text-transform:uppercase;
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:700
 }
 @media (max-width:991px){
@@ -29791,7 +29791,7 @@ img{
 }
 .panel-details ul li{
     margin-bottom:3px;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif
 }
 .panel-details ul li strong{
     font-weight:bolder;
@@ -29879,7 +29879,7 @@ img{
     content:'\203a'
 }
 .tooltip-inner{
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif!important;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif!important;
     font-size:12px!important
 }
 #wrapper{
@@ -29955,7 +29955,7 @@ ul.list-number li{
     padding-right:10px;
     text-transform:capitalize;
     width:auto;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif
 }
 .themeControll .nicescroll-cursors{
     background-color:rgba(255,255,255,.75)!important;
@@ -30105,7 +30105,7 @@ table.checkboxtable td,table.checkboxtable th{
     -webkit-font-smoothing:antialiased
 }
 .message-list .list-group-item .list-box-content .title{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-weight:700;
     color:#292b2c;
     font-size:.875rem;
@@ -30630,7 +30630,7 @@ table.checkboxtable td,table.checkboxtable th{
 }
 .demo-intro .intro-title{
     color:#fff;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:48px;
     line-height:1.4;
     font-weight:lighter;
@@ -31985,7 +31985,7 @@ body{
     }
 }
 li.lang-menu ul.dropdown-menu>li a,ul.dropdown-menu.user-menu>li a{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:.84rem;
     font-weight:400
 }
@@ -32031,7 +32031,7 @@ ol li,ul li{
     background-color:#fff
 }
 h1,h2,h3,h4,h5,h6{
-    font-family:Roboto,Helvetica,Arial,sans-serif
+    font-family:Cairo,Helvetica,Arial,sans-serif
 }
 .btn-sm{
     padding:4px 8px;
@@ -32122,7 +32122,7 @@ img{
     padding:.7rem 1rem
 }
 .card-header{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:1rem;
     text-transform:none
 }
@@ -32738,7 +32738,7 @@ ul.installation li i{
 .ribbon-horizontal span{
     position:relative;
     padding:0 10px 0 4px;
-    font-family:"Roboto Condensed",Helvetica,Arial,sans-serif;
+    font-family:"Cairo Condensed",Helvetica,Arial,sans-serif;
     font-size:12px;
     font-weight:400;
     text-align:center;
@@ -33173,7 +33173,7 @@ aside .inner-box.enable-long-words{
     }
 }
 .mobile-filter-bar{
-    font-family:Roboto,Helvetica,Arial,sans-serif
+    font-family:Cairo,Helvetica,Arial,sans-serif
 }
 .col-form-label>sup,.form-check-label>sup,.form-group.required>sup,.form-label>sup,label>sup{
     color:red
@@ -33575,7 +33575,7 @@ pre{
     box-shadow:none
 }
 .btn-listing{
-    font-family:Roboto,Helvetica,Arial,sans-serif;
+    font-family:Cairo,Helvetica,Arial,sans-serif;
     font-size:14px;
     font-weight:700;
     text-transform:none;
