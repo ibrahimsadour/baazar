@@ -49,14 +49,14 @@ $hideOnMobile = (data_get($sectionOptions, 'hide_on_mobile') == '1') ? ' hidden-
 								<div class="search-col-inner">
 									<i class="fas {{ (config('lang.direction')=='rtl') ? 'fa-angle-double-left' : 'fa-angle-double-right' }} icon-append"></i>
 									<div class="search-col-input">
-										<input class="form-control has-icon" name="q" placeholder="{{ t('what') }}" type="text" value="">
+										<input class="form-control has-icon" name="q" placeholder="ابحث في بازار الخليج" type="text" value="">
 									</div>
 								</div>
 							</div>
 							
 							<input type="hidden" id="lSearch" name="l" value="">
 							
-							<div class="col-md-5 col-sm-12 search-col relative locationicon mb-1 mb-xxl-0 mb-xl-0 mb-lg-0 mb-md-0">
+							<div class="col-md-5 col-sm-12 search-col relative locationicon mb-1 mb-xxl-0 mb-xl-0 mb-lg-0 mb-md-0" style="display: none;">
 								<div class="search-col-inner">
 									<i class="fas fa-map-marker-alt icon-append"></i>
 									<div class="search-col-input">
@@ -87,7 +87,7 @@ $hideOnMobile = (data_get($sectionOptions, 'hide_on_mobile') == '1') ? ' hidden-
 							<div class="col-md-2 col-sm-12 search-col">
 								<div class="search-btn-border bg-primary">
 									<button class="btn btn-primary btn-search btn-block btn-gradient">
-										<i class="fas fa-search"></i> <strong>{{ t('find') }}</strong>
+										<i class="fas fa-search"></i> <strong>{{ t('search') }}</strong>
 									</button>
 								</div>
 							</div>
@@ -113,14 +113,14 @@ $hideOnMobile = (data_get($sectionOptions, 'hide_on_mobile') == '1') ? ' hidden-
 							<div class="search-col-inner">
 								<i class="fas {{ (config('lang.direction')=='rtl') ? 'fa-angle-double-left' : 'fa-angle-double-right' }} icon-append"></i>
 								<div class="search-col-input">
-									<input class="form-control has-icon" name="q" placeholder="{{ t('what') }}" type="text" value="">
+									<input class="form-control has-icon" name="q" placeholder="ابحث في بازار الخليج" type="text" value="">
 								</div>
 							</div>
 						</div>
 						
 						<input type="hidden" id="lSearch" name="l" value="">
 						
-						<div class="col-md-5 col-sm-12 search-col relative locationicon mb-1 mb-xxl-0 mb-xl-0 mb-lg-0 mb-md-0">
+						<div class="col-md-5 col-sm-12 search-col relative locationicon mb-1 mb-xxl-0 mb-xl-0 mb-lg-0 mb-md-0" style="display: none;">
 							<div class="search-col-inner">
 								<i class="fas fa-map-marker-alt icon-append"></i>
 								<div class="search-col-input">
@@ -151,7 +151,7 @@ $hideOnMobile = (data_get($sectionOptions, 'hide_on_mobile') == '1') ? ' hidden-
 						<div class="col-md-2 col-sm-12 search-col">
 							<div class="search-btn-border bg-primary">
 								<button class="btn btn-primary btn-search btn-block btn-gradient">
-									<i class="fas fa-search"></i> <strong>{{ t('find') }}</strong>
+									<i class="fas fa-search"></i> <strong>{{ t('search') }}</strong>
 								</button>
 							</div>
 						</div>

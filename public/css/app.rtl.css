@@ -14854,7 +14854,7 @@ progress{
     }
     .col-md-5{
         flex:0 0 auto;
-        width:41.6666666667%
+        width:83.2%
     }
     .col-md-6{
         flex:0 0 auto;
@@ -24620,7 +24620,7 @@ label{
     line-height:1.4
 }
 html[dir=rtl] body h1,h2,h3,h4,h5,h6,p,b,div,li,ul,a,span,input,strong,button,.btn{
-    font-family:Tajawal, sans-serif !important;
+    font-family:Cairo, sans-serif !important;
 }
 .search-row .search-col .form-control,.search-row button.btn-search{
     border-radius:0;
