@@ -128,7 +128,7 @@ class SocialController extends FrontController
 		
 		// API CALL - GET USER FROM PROVIDER
 		try {
-			$userData = Socialite::driver($provider)->stateless()->user();
+			$userData = Socialite::driver($provider)->user();
 			
 			// Data not found
 			if (!$userData) {
