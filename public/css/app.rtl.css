@@ -33298,7 +33298,13 @@ pre{
     font-size:1rem
 }
 .item-list h2.item-price{
-    font-size:20px
+    background-color: #1d8eff;
+    border: 1px solid;
+    color: #ffffff;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
 }
 .listing-view-action span i{
     font-size:16px
