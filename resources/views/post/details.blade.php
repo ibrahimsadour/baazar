@@ -116,12 +116,12 @@
 								<i class="far fa-clock"></i> {!! data_get($post, 'created_at_formatted') !!}
 							</span>&nbsp;
 							@endif
-							<span class="category"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
+							{{-- <span class="category"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
 								<i class="bi bi-folder"></i> {{ data_get($post, 'category.parent.name', data_get($post, 'category.name')) }}
 							</span>&nbsp;
 							<span class="item-location"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
 								<i class="bi bi-geo-alt"></i> {{ data_get($post, 'city.name') }}
-							</span>&nbsp;
+							</span>&nbsp; --}}
 							<span class="category"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
 								<i class="bi bi-eye"></i> {{
 									\App\Helpers\Number::short(data_get($post, 'visits'))
@@ -129,9 +129,9 @@
 									. trans_choice('global.count_views', getPlural(data_get($post, 'visits')), [], config('app.locale'))
 									}}
 							</span>
-							<span class="category float-md-end"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
+							{{-- <span class="category float-md-end"{!! (config('lang.direction')=='rtl') ? ' dir="rtl"' : '' !!}>
 								{{ t('reference') }}: {{ hashId(data_get($post, 'id'), false, false) }}
-							</span>
+							</span> --}}
 						</span>
 						
 						@include('post.inc.pictures-slider')

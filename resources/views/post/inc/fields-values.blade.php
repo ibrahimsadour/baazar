@@ -45,7 +45,7 @@
 									<div class="row bg-light rounded py-2 mx-0">
 										<div class="col-6 fw-bolder">{{ $field->name }}</div>
 										<div class="col-6 text-sm-end text-start">
-											<a href="{{ addHttp($field->default_value) }}" target="_blank" rel="nofollow">{{ addHttp($field->default_value) }}</a>
+											<a href="{{ addHttp($field->default_value) }}" target="_blank" >{{ parse_url($field->default_value, PHP_URL_HOST) }}</a>
 										</div>
 									</div>
 								</div>
