@@ -37388,4 +37388,89 @@ body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown 
 .iti__flag.iti__np{
     background-color:transparent
 }
+/* css castuim made from Ibrahim 25/08/2023 for call button */
+.dUihZb {
+    bottom: 0px;
+    gap: 10px;
+    z-index: 4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+}
+
+.p-8 {
+    padding: 8px;
+}
+.width-100 {
+    width: 100%;
+}
+.fixed {
+    position: fixed;
+    backface-visibility: hidden;
+}
+.gap-10 {
+    gap: 10px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
+}
+.me-8 {
+    margin-left: 8px;
+}
+.vMiddle {
+    vertical-align: middle;
+}
+.alignItems {
+    -webkit-box-align: center;
+    align-items: center;
+}
+.justifyContent {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+input[type="submit"], input[type="button"], button, [class*="Btn"] {
+    border: 0px;
+}
+.blueBg, .blueHoverBg:hover, .blueBtn {
+    background-color: #1d8eff ;
+}
+input[type="submit"]:not(.noRipple), input[type="button"]:not(.noRipple), button:not(.noRipple), [class*="Btn"]:not(.noRipple), .ripple {
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px) perspective(1px);
+}
+.font-19 {
+    font-size: 1.1875em;
+    line-height: 1.1875em;
+}
+.height-55 {
+    height: 55px;
+}
+.flex {
+    display: flex;
+}
+
+.whiteBtn, .whiteBtn-2 {
+    color: #fff !important ;
+    background-color: #2ecc71!important;
+    border: 2px solid #2ecc71 !important;
+
+}
+.orangeBtn, .greenBtn, .grayBtn, .blueBtn, .whiteBtn-3, .whiteBtn, .whiteBtn-2, .fbBtn, .waBtn {
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+    .dUihZb{
+        display: none;
+    }
+}
+/* @media screen and (max-width:768px){
+.ev-action{
+    display: none;
+    }
+} */
  
