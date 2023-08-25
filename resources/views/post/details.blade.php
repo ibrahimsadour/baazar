@@ -621,7 +621,8 @@ if (!session()->has('emailVerificationSent') && !session()->has('phoneVerificati
 }
 
 .p-8 {
-    padding: 8px;
+	background-color: #fff;
+    padding: 16px;
 }
 .width-100 {
     width: 100%;
@@ -634,9 +635,9 @@ if (!session()->has('emailVerificationSent') && !session()->has('phoneVerificati
     gap: 10px;
 }
 
-.mb-8 {
+/* .mb-8 {
     margin-bottom: 8px;
-}
+} */
 .me-8 {
     margin-left: 8px;
 }
